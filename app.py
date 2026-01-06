@@ -31,7 +31,7 @@ def load_bundle():
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("data/player_data.csv")
+        df = pd.read_csv("player_data.csv")
         return df
     except Exception as e:
         st.error(f"❌ Error loading CSV file: {e}")
@@ -551,4 +551,5 @@ else:
 
 st.markdown("---")
 st.caption("🤖 Powered by XGBoost Machine Learning | Built with Streamlit")
+
 
