@@ -18,7 +18,7 @@ st.set_page_config(
 @st.cache_resource
 def load_bundle():
     try:
-        with open("models/model_bundle.pkl", "rb") as f:
+        with open("model_bundle.pkl", "rb") as f:
             bundle = pickle.load(f)
         return bundle
     except Exception as e:
@@ -551,3 +551,4 @@ else:
 
 st.markdown("---")
 st.caption("🤖 Powered by XGBoost Machine Learning | Built with Streamlit")
+
